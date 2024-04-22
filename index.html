@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sergey Bokoch | portfolio</title>
+    <link rel="icon" type="image" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1900ms;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay: 1900ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">work</a>
+    <a id="contacts" onclick="showcontact()" class="animated fadeIn" style="animation-delay: 1000ms;">contact</a>
+    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">projects</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
+        <h1>Bokoch Sergey</h1>
+        <h2>.Net Developer / Backend Dev / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showprojects()">projects</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
+                        href="https://t.me/MacKenlly"><i class="fab fa-telegram"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+                        href="https://vk.com/mckenlly"><i class="fab fa-vk"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"
+                        href="https://github.com/McKenlly"><i class="fab fa-github"></i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="projects_container" class="container">
+        <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
+        <h1>projects.</h1>
+        <section>
+            <h2>my work</h2>
+            <p>
+                Здесь представлены несколько моих петпроджектов.
+            </p>
+            <ul>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Quizzer</h3>
+                        <p>Упрощенный аналог "Своей игры". Вопросы, ответы, команды и ведущий</p>
+                        <button class="btn_one"><a href="https://bitbucket.org/McKenlly/quizzer/src/master/"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>SudokuSolver</h3>
+                        <p>Бот, который решает судоку по фотографии.</p>
+                        <button class="btn_one"><a href="https://github.com/McKenlly/SudokuSolver"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <p>Анализ, оптимизация, структуры данных</p>
+                        <button class="btn_one"><a
+                                href="https://bitbucket.org/McKenlly/digitalanalize/src/master/"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <p>Пошаговый транслятор Lisp -> C++</p>
+                        <button class="btn_one"><a href="https://bitbucket.org/McKenlly/programmingsystem/src/master/"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <p>Нейросеть, для игры в шахматы, которая способна имитировать соперника</p>
+                        <button class="btn_one"><a href="https://bitbucket.org/McKenlly/deep-chess/src/master/"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>work.</h1>
+        <section>
+            <p>
+                Работая по найму мне довелось побывать во многих компаниях из разных сфер,
+                что помогло мне сильно расширить свой кругозор и скиллы. От будушей компании жду того же. Важны интересные задачи и впервую очередь хорошую команду!
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;ИСП РАН</div>
+                <div><i class="fas fa-circle"></i>&nbsp;МТС</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Baking bad</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Телеканал Россия, ГТК</div>
+                <div><i class="fas fa-circle"></i>&nbsp;FunSun</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Ренесанс страхование</div>
+            </div>
+        </section>
+        <section>
+            <h2>Немного из участия в олимпиадах и хакатонах</h2>
+            <p>Участник регионального финал ImagineCup 2018 со спортивным мобильным приложением под ОС Android.</p>
+            <p>Призер олимпиады по спортивному программированию MosCode в Сколково(1/4 ACM).</p>
+            <p>Призер DigitalHack</p>
+            <p>Участник IBM Hack</p>
+            <p>Организатор Sharpoton</p>
+            <p>Победитель хакатона DatsOrangeHack</p>
+            <!-- <button class="btn_one"><a href="./assets/Resume.pdf" target="_blank"
+                    style="color: inherit; text-decoration: none">View
+                    Resume</a></button> -->
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about.</h1>
+        <section>
+            <h2>about me</h2>
+            <p>
+                Backend разработчик, который очень любит микросервисы, грамотно поставленные и интересные задачи. Отработан моторный навык оптимизировать и рефакторить блоки, которые в этом нуждаются. Последнее время стараюсь придерживаться функционального стиля и покрытием модулей тестами. Люблю дружные и сплоченные коллективы. Предпочитаю вести разработку по системе git flow.
+                Люблю участвовать в хакатонах с командой, ради разработки продукта в кратчайшие сроки.
+            </p>
+        </section>
+        <section>
+
+            <h2>
+                my stack
+            </h2>
+            <p>.Net Core 3.1/5/7/8</p>
+            <p>Linux/Arch</p>
+            <p>Docker</p>
+            <p>TCP/IP, SSL</p>
+            <p>CI/CD(git actions, team city, gitlab)</p>
+            <p>Брокеры сообщений: Rabbit MQ/Kafka</p>
+            <p>GRPC</p>
+            <p>MVVM, MVC, DDD, SOLID</p>
+            <p>MediatR(CQRS)</p>
+            <p>ORM DB Frameworks: Dapper/EF core/ADO.NET</p>
+            <p>Rider/VS code/Terminal/Google</p>
+        </section>
+        <section>
+            <h2>
+                database skills
+            </h2>
+            <p>Postgre</p>
+            <p>MS SQL</p>
+            <p>MongoDB</p>
+            <p>MySQL/SqlLite</p>
+            <h2>
+                engine search
+            </h2>
+            <p>Elastic search</p>
+            </section>
+        <section>
+            <h2>skills</h2>
+            <p>Алгоритмы и структуры данных(Btree, RBTree and more).</p>
+            <p>Паттерны проектирования</p>
+            <p>Знание машинного обучения для решения прикладных задач(Обычно делаю микросервис на Python)</p>
+        </section>
+    </div>
+    <div id="footer">
+        просто и со вкусом :)
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
